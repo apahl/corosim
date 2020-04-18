@@ -38,8 +38,8 @@ Blue is a normal person, red is infected, green is healed. Violet means in quara
 The simulation ends when there are no more infected or quarantained people.
 
 Then the Jupyter Notebook `corosim` can be opened and run, it will automatically read the generated data and display the result.
-For example, this is how a simulation with a population of 75 and on restriction on mobility turns out:
+For example, this is how a simulation with a population of 75 and no restriction on mobility turns out:
 ![Sim1](res/sim1.png)
 
-Here is the same example when 75% of the population "Stay at Home", the infected curve is much flatter:
+Here is the same example when 75% of the population "Stay at Home", the infection curve is much flatter:
 ![Sim1](res/sim2.png)
