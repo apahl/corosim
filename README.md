@@ -26,8 +26,20 @@ and their function.
 Clone the repo, adjust the parameters in `Sources/CoroSim/main.swift` and run the simulation with
 `swift run`.
 
+In addition to the population size and the infection rate at the start, the following parameters can be set:
+fraction of people staying at home, duration of the infection, fraction of people being tested, qurantaine after X days. 
+
 A Raylib window will open and run the simulation:
 
+![Simulation](res/corosim_small.gif)
 
-<img src="res/corosim_small.gif" alt="Simulation" height="350"/>
+Blue is a normal person, red is infected, green is healed. Violet means in quarantaine. A quarantained person can not infect others. The simulation does not include a death rate.
 
+The simulation ends when there are no more infected or quarantained people.
+
+Then the Jupyter Notebook `corosim` can be opened and run, it will automatically read the generated data and display the result.
+For example, this is how a simulation with a population of 75 and on restriction on mobility turns out:
+![Sim1](res/sim1.png)
+
+Here is the same example when 75% of the population "Stay at Home", the infected curve is much flatter:
+![Sim1](res/sim2.png)
